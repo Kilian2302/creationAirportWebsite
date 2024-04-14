@@ -1,0 +1,26 @@
+.team{
+    margin: 75px 0;
+}
+h4 {
+    font-family: Srisakdi;
+}
+.member{
+    text-align: center;
+    font-weight: bold;
+    font-size: 55px;
+    font-family:Dancing Script;
+    letter-spacing: 2px;
+    color: #0d6edf;
+    padding-bottom: 10px;
+}
+.member:after{
+    content: '';
+    background: #0d6edf;
+    display: block;
+    height: 3px;
+    width: auto;
+    margin: 10px auto;
+}
+.body{
+    background-color: white;
+}

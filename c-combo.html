@@ -1,0 +1,635 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ASK.com</title>
+    <link rel='shortcut icon' href='./img/logo icon.jpg' />
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/comeback.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/comeback.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar bg-primary navbar-expand-lg" data-bs-theme="light">
+            <div class="container-fluid logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="./main.html">
+                    <img src="./img/logo.jpg" alt="Bootstrap" width="110px" height="70px"
+                        style="border: 2px solid white;">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="container-fluid">
+                        <ul class="nav justify-content-center" data-bs-theme="light">
+                            <li class="nav-item">
+                                <div class="btn-group">
+                                    <a href="./main.html" type="button" class="btn btn-primary" aria-expanded="false">
+                                        Vé máy bay
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="btn-group">
+                                    <a href="./h-khachsan.html" type="button" class="btn btn-primary"
+                                        aria-expanded="false">
+                                        Khách sạn
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="btn-group">
+                                    <a href="./c-combo.html" type="button" class="btn btn-primary"
+                                        aria-expanded="false">
+                                        Combo tiết kiệm
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="btn-group">
+                                    <a type="button" class="btn btn-primary " aria-expanded="false"
+                                        href="./tour-hcm.html">
+                                        Tours
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./e-Login.html" type="button" class="btn btn-danger" aria-expanded="false">
+                                    Đăng nhập
+                                </a>
+                                <a href="./e-Signup.html" type="button" class="btn btn-warning" aria-expanded="false">
+                                    Đăng kí
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <form class="d-flex" role="search">
+                    <input class="form-control " type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="shadow-lg p-1 mb-9  rounded col-md-8 offset-md-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 mb-2">
+                        <div class="display-6 ">COMBO TIẾT KIỆM</div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="container overflow-hidden text-left">
+                        <div class="row gy-3">
+                            <!--Combo tiết kiệm-->
+                            <div class="col-8">
+                                <h6>Các gói combo :</h6>
+
+                                <select class="form-select" name="combo" id="combo">
+                                    <option value="1">TP HCM (SGN) → Hà Nội (HAN) </option>
+                                    <option value="1">TP HCM (SGN) → Đà Nẵng (DAD) </option>
+                                    <option value="1">TP HCM (SGN) → Đà Lạt (DLI) </option>
+                                    <option value="1">TP HCM (SGN) → Cần Thơ (VCA) </option>
+                                    <option value="1">Hà Nội (HAN) → TP HCM (SGN) </option>
+                                    <option value="1">Hà Nội (HAN) → Đà Nẵng (DAD) </option>
+                                    <option value="1">Hà Nội (HAN) → Đà Lạt (DLI) </option>
+                                    <option value="1">Hải Phòng (HPN) → TP HCM (SGN) </option>
+                                    <option value="1">Hải Phòng (HPN) → Đà Nẵng (DAD) </option>
+                                    <option value="1">Hải Phòng (HPN) → Đà Lạt (DLI) </option>
+                                    <option value="1">Cần Thơ (VCA) → Hải Phòng (HPN) </option>
+                                    <option value="1">Cần Thơ (VCA) → Đà Nẵng (DAD) </option>
+                                    <option value="1">Cần Thơ (VCA) → Hà Nội (HAN) </option>
+                                    <option value="1">Cần Thơ (VCA) → Đà Lạt (DLI) </option>
+                                </select>
+                            </div>
+
+                            <!--Hành Khách-->
+                            <div class="col-4">
+                                <div class="p-3">
+                                    <h6 class="text-dark">Số hành khách<img style="width: 25px;"
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAURJREFUSEvVlf8xxUAURs+rgA5QASpABXTgqYAOUAEqQAV0gAoeHShBB8yZuZtJYrObmMlg/8nk7Y9zv2+/m7dg5rGY+Xz+NOACuAPeSy7UFJwBh8A+8Aw8AjfAEfAAfABb8cxySoBr4DSzS4DVC9wG7oHlkIohwA6wKkjfDWu0Zy1UZK0aAmjNVQFwEv6rYg84CEXftvwaYIxFr2HTBqBlvo9W4MLSJWuhF30OvAEWNDlFbvAgI6nPLxFTwabmNk40qsJM1yQFpf7ZjN6wAKPqsOm8/M4YumQrtAdy0vVaFebfoUIPN66XoaaB9AHrwFPJ01Z5goynFqXOdtrObnqiD3BTklyyKM253gQli477KtqAWnMNAVPTJRVtaOdzPbX6nIrP+LEpvK0gTY6xZmxYOgpmB/yk8uqe2h9O9YDagv8P+AJ6Qj8ZCm3B9gAAAABJRU5ErkJggg==" />
+                                    </h6>
+                                    <div class="dropdown">
+                                        <button class="btn btn-light dropdown-toggle" type="button"
+                                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Người lớn, Trẻ em, Em bé
+                                        </button>
+                                        <table class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                            <tr>
+                                                <td>-</td>
+                                                <td>Người lớn</td>
+                                                <td><input type="number" min="1" max="7" value="1"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>-</td>
+                                                <td>Trẻ em</td>
+                                                <td><input type="number" min="0" max="6" value="0"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>-</td>
+                                                <td>Em bé</td>
+                                                <td><input type="number" min="0" max="5" value="0"></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!--Ngày đi-->
+                            <div class="col-4">
+
+                                <h6 class="text-dark"><img style="width: 25px;"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOVJREFUSEvNldENwjAMRF8ngA2ACVgBJmAEYCM2KGzCKLABG4BOSiBKlbpJG8A//Uh8dz47dUPlaCrjYxE8nYDUPev8+wQboAWWhdbdgCNw9flx6bqwKAT3acJYpQi8pyM5PtbHFZhNM5g7+T8jqG7RXxBc3DhqrON4W5/qgVXBw42ivgf3dsKcUQRSrlgDW+AE7CNFxQQCl2LFGdgB86ksCsE9Qay884CH9iAHXCRZFuWCZxOEVcr3lC3FU+QJhoL3VqC5nlmPwDi/h/skbrIWjpSW7gSBa4yTC2ek+J5/xuTIDvAFvhkvGdJoyIQAAAAASUVORK5CYII=" />
+                                    Ngày đi</h6>
+                                <input class="form-select" type="datetime-local" min="2023-01-01" required>
+
+                            </div>
+                            <!--Khứ hồi-->
+                            <div class="col-4">
+
+                                <div>
+                                    <h6 class="text-dark"><input class="form-check-input" type="checkbox"
+                                            onclick="gohome()">
+                                        Khứ hồi<img style="width: 25px;"
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOVJREFUSEvNldENwjAMRF8ngA2ACVgBJmAEYCM2KGzCKLABG4BOSiBKlbpJG8A//Uh8dz47dUPlaCrjYxE8nYDUPev8+wQboAWWhdbdgCNw9flx6bqwKAT3acJYpQi8pyM5PtbHFZhNM5g7+T8jqG7RXxBc3DhqrON4W5/qgVXBw42ivgf3dsKcUQRSrlgDW+AE7CNFxQQCl2LFGdgB86ksCsE9Qay884CH9iAHXCRZFuWCZxOEVcr3lC3FU+QJhoL3VqC5nlmPwDi/h/skbrIWjpSW7gSBa4yTC2ek+J5/xuTIDvAFvhkvGdJoyIQAAAAASUVORK5CYII=" />
+                                    </h6>
+                                    <input class="form-select" type="datetime-local" min="2023-01-01" id="gohome"
+                                        style="display: none;" required>
+                                </div>
+
+                            </div>
+                            <!--Hạng vé-->
+                            <div class="col-4">
+
+                                <h6 class="text-dark">Hạng vé<img style="width: 25px;"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAV1JREFUSEvVlf8xRTEQhb9XASpABXSAClABHaADOqACowI6QAV0QAl0YL6ZZGZf3ua+PD/+kJnMnZtkz9mcPXvvjD8esz/G518RrAMfrSK/cYNd4B7YAm6A80jyUwLBHwGzr2MbeK8vLcEpsFcOeMj5CbwmZsjAPdYl8IoCrU0466ns+VSKmLlbSyUywEDnFFGWwx2gAnOjV4NViVJwmUaKbFaXwGZHOq250ZN1hMBYC/oyUZsuzghBzy2Rb845U30gWLTkCLh4B0B1WLfIan1bdiVxHiVWtKCOk4B0DDxkEkaJlhXT+OqW/dLBFfOqGGGBI6uBwfbBYXO6taKS2PVpg9XYqSLHzvaTYSHjiLd4BnwfukE8dA2clYUsGeu0A3ybwFu8FYLMKdEYqRojfaA7rMcF4I3aoXx2s5ZeWSID1FZgnwt/rLKuVNne0LdIkvR3mGXcro1INILTPfMFJp08GcwrNg8AAAAASUVORK5CYII=" />
+                                </h6>
+                                <select class="form-select">
+                                    <option>Phổ thông(Economy Class)</option>
+                                    <option>Phổ thông đặc biệt(Premium Class)</option>
+                                    <option>Thương gia(Business Class)</option>
+                                    <option>Hạng nhất(First Class)</option>
+                                </select>
+
+                            </div>
+                        </div><br>
+                        <!--Nút-->
+                        <div class="center col-6">
+                            <div class="modal fade" id="ok" aria-hidden="true"
+                                aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">
+                                                Thông báo
+                                            </h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body h5 text-primary">
+                                            Bạn đã đặt vé thành công
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn btn-primary" data-bs-toggle="modal">
+                                                ok
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary col-12" data-bs-target="#ok" data-bs-toggle="modal">
+                                Đặt vé
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="carouselExample" class="carousel slide bg-primary-subtle" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!--slide 1-->
+                <div data-bs-interval="1000" class="carousel-item active">
+                    <div class="row slide_item">
+                        <div class="col-4">
+                            <div class="card">
+                                <img class="card-img-top" src="./img/combo/hanoi.jpg" alt="Card image cap">
+                                <div class="card-body">
+									<a href="./tour-hanoi.html"></a>
+                                        <h5 class="card-title">TP HCM (SGN) → Hà Nội (HAN)</h5>
+                                        <p class="card-text">Vé máy bay + Khách sạn + Du lịch sông Năng và Hồ Ba Bể
+                                            (giảm 15%)</p>
+
+                                
+                            </div>
+                        </div>
+
+                        <div class="col-4">
+                            <div class="card">
+                                <img class="card-img-top" src="./img/combo/danang.jpg" alt="Card image cap">
+                                <div class="card-body"> <a href="./tour-danang.html">
+                                        <h5 class="card-title">TP HCM (SGN) → Đà Nẵng (DAD)</h5>
+                                        <p class="card-text">Vé máy bay + Du lịch Ngũ Hành Sơn (giảm 15%)</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <img class="card-img-top" src="./img/combo/dalat.jpg" alt="Card image cap">
+                                <div class="card-body"> <a href="#">
+                                        <h5 class="card-title">TP HCM (SGN) → Đà Lạt (DLI)</h5>
+                                        <p class="card-text">Vé máy bay + Khách sạn + Du lịch (giảm 15%)</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--slide 2-->
+                <div data-bs-interval="1000" class="carousel-item">
+                    <div class="row slide_item">
+                        <div class="col-4">
+                            <div class="card">
+                                <img class="card-img-top" src="./img/combo/haiphong.jpg" alt="Card image cap">
+                                <div class="card-body"> <a href="#">
+                                        <h5 class="card-title">TP HCM (SGN) → Hải Phòng (HPN)</h5>
+                                        <p class="card-text">Vé máy bay + Khách sạn (giảm 15%)</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <img class="card-img-top" src="./img/combo/cantho.jpg" alt="Card image cap">
+                                <div class="card-body"> <a href="./tour-cantho.html">
+                                        <h5 class="card-title">TP HCM (SGN) → Cần Thơ (VCA)</h5>
+                                        <p class="card-text">Vé máy bay + Du lịch Miền Tây Mỹ Tho (giảm 15%)</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <img class="card-img-top" src="./img/combo/saigon.jpg" alt="Card image cap">
+                                <div class="card-body"> <a href="./tour-hcm.html">
+                                        <h5 class="card-title">Hà Nội (HAN) → TP HCM (SGN)</h5>
+                                        <p class="card-text">Vé máy bay + Khách sạn + Du lịch Chợ Bến Thành (giảm 10%)
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--slide 3-->
+                <div data-bs-interval="1000" class="carousel-item">
+                    <div class="row slide_item">
+                        <div class="col-4">
+                            <div class="card">
+                                <img class="card-img-top" src="./img/combo/danang.jpg" alt="Card image cap">
+                                <div class="card-body"> <a href="./tour-danang.html">
+                                        <h5 class="card-title">Hà Nội (HAN) → Đà Nẵng (DAD)</h5>
+                                        <p class="card-text">Vé máy bay + Du lịch Ba Na Hills (giảm 10%)</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <img class="card-img-top" src="./img/combo/dalat.jpg" alt="Card image cap">
+                                <div class="card-body"> <a href="#">
+                                        <h5 class="card-title">Hà Nội (HAN) → Đà Lạt (DLI)</h5>
+                                        <p class="card-text">Vé máy bay + Khách sạn + Du lịch (giảm 10%)</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <img class="card-img-top" src="./img/combo/saigon.jpg" alt="Card image cap">
+                                <div class="card-body"> <a href="./tour-hcm.html">
+                                        <h5 class="card-title">Hải Phòng (HPN) → TP HCM (SGN)</h5>
+                                        <p class="card-text">Vé máy bay + Khách sạn + Du lịch Chợ Bến Thành (giảm 8%)
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--slide 4-->
+                <div data-bs-interval="1000" class="carousel-item">
+                    <div class="row slide_item">
+                        <div class="col-4">
+                            <div class="card">
+                                <img class="card-img-top" src="./img/combo/danang.jpg" alt="Card image cap">
+                                <div class="card-body"> <a href="./tour-danang.html">
+                                        <h5 class="card-title">Hải Phòng (HPN) → Đà Nẵng (DAD)</h5>
+                                        <p class="card-text">Vé máy bay + Du lịch Ba Na Hills (giảm 8%)</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <img class="card-img-top" src="./img/combo/dalat.jpg" alt="Card image cap">
+                                <div class="card-body"> <a href="#">
+                                        <h5 class="card-title">Hải Phòng (HPN) → Đà Lạt (DLI)</h5>
+                                        <p class="card-text">Vé máy bay + Khách sạn (giảm 8%)</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <img class="card-img-top" src="./img/combo/haiphong.jpg" alt="Card image cap">
+                                <div class="card-body"> <a href="./tour-haiphong.html">
+                                        <h5 class="card-title">Cần Thơ (VCA) → Hải Phòng (HPN)</h5>
+                                        <p class="card-text">Vé máy bay + Du lịch Vịnh Lan Hạ (giảm 20%)</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--slide 5-->
+                <div data-bs-interval="1000" class="carousel-item">
+                    <div class="row slide_item">
+                        <div class="col-4">
+                            <div class="card">
+                                <img class="card-img-top" src="./img/combo/danang.jpg" alt="Card image cap">
+                                <div class="card-body"> <a href="#">
+                                        <h5 class="card-title">Cần Thơ (VCA) → Đà Nẵng (DAD)</h5>
+                                        <p class="card-text">Vé máy bay + Khách sạn (giảm 20%)</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <img class="card-img-top" src="./img/combo/hanoi.jpg" alt="Card image cap">
+                                <div class="card-body"> <a href="#">
+                                        <h5 class="card-title">Cần Thơ (VCA) → Hà Nội (HAN)</h5>
+                                        <p class="card-text">Vé máy bay + Khách sạn (giảm 20%)</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <img class="card-img-top" src="./img/combo/dalat.jpg" alt="Card image cap">
+                                <div class="card-body"> <a href="#">
+                                        <h5 class="card-title">Cần Thơ (VCA) → Đà Lạt (DLI)</h5>
+                                        <p class="card-text">Vé máy bay + Khách sạn + Du lịch (giảm 20%)</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon btn btn-primary" aria-hidden="true"
+                    style="height: 100px;"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon btn btn-primary" aria-hidden="true"
+                    style="height: 100px;"></span>
+            </button>
+        </div>
+        <p class="fs-2 text-center">Tại sao nên đặt chỗ với ASK</p>
+        <div class="row">
+            <div style="margin: 0 0 0 auto ;" class="col-md-5">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="https://ik.imagekit.io/tvlk/image/imageResource/2017/05/17/1495008495760-d92160ea2b56fc1128cbdff93aa43774.png?tr=h-150,q-75,w-150"
+                                class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Du lịch trọn vẹn</h5>
+                                <p class="card-text">
+                                    Giải pháp toàn diện - giúp bạn tìm chuyến bay và khách sạn khắp Việt Nam một
+                                    cách
+                                    tiết kiệm.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="margin: 0 0 auto 0;" class="col-md-5">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Hỗ trợ tận tình 24/7</h5>
+                                <p class="card-text">
+                                    Đội ngũ nhân viên hỗ trợ khách hàng luôn sẵn sàng giúp đỡ bạn trong từng bước
+                                    của
+                                    quá trình đặt vé
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="https://ik.imagekit.io/tvlk/image/imageResource/2017/05/17/1495008521046-3cee046bb3ddb863398300f89d83c0f9.png?tr=h-150,q-75,w-150"
+                                class="img-fluid rounded-start" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div style="margin: 0 0 0 auto;" class="col-md-5">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Thanh toán an toàn</h5>
+                                <p class="card-text">
+                                    Giao dịch trực tuyến an toàn với nhiều lựa chọn như thanh toán tại cửa hàng tiện
+                                    lợi, chuyển khoản ngân hàng, thẻ tín
+                                    dụng đến Internet Banking. Không tính phí giao dịch.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="https://ik.imagekit.io/tvlk/image/imageResource/2017/05/17/1495008514239-c1d0a51538cd02053c9b1a6c567fe5b5.png?tr=h-150,q-75,w-150"
+                                class="img-fluid rounded-start" alt="...">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div style="margin: 0 0 auto 0;" class="col-md-5">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="https://ik.imagekit.io/tvlk/image/imageResource/2017/05/17/1495008504598-6c1d5675c41e47eee0b27c59c07a2bbd.png?tr=h-150,q-75,w-150"
+                                class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Giá cả phải chăng</h5>
+                                <p class="card-text">
+                                    Giá bạn thấy là giá bạn trả! Dễ dàng so sánh khi không cần phải trả thêm chi phí
+                                    ẩn!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-3 col-lg-3">
+                    <h5 class="btn btn-primary">Các chuyến bay</h5>
+                    <ul class="list-unstyled css1">
+                                        Vé máy bay đi Hà Nội</li>
+                        <li class="mb-2"><a href="./main.html">
+                                Vé máy bay đi Hồ Chí Minh</a></li>
+                        <li class="mb-2"><a href="./main.html">
+                                Vé máy bay đi Cần Thơ</a></li>
+                        <li class="mb-2"><a href="./main.html">
+                                Vé máy bay đi Đà Nẵng</a></li>
+                        <li class="mb-2"><a href="./main.html">
+                                Vé máy bay đi Hải Phòng</a></li>
+                        <li class="mb-2"><a href="./main.html">
+                                Vé máy bay đi đu idol</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-lg-3">
+                    <h5 class="btn btn-primary">Các khách sạn hàng đầu</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a
+                                href="https://www.lottehotel.com/hanoi-hotel/vi.html?utm_source=google&utm_medium=cpc&utm_campaign=lottehotel|hanoi|globallocal|alwayson|pc|promotion|vietnam|vietnamese&utm_content=generic|none|none&utm_term=&gclid=Cj0KCQjwtsCgBhDEARIsAE7RYh1S5FopV1my-49j4ymWTiBQYb26z0_4qgys2vskb8x9CDkx_7U9kG0aArprEALw_wcB">
+                                Khách sạn Hà Nội</a></li>
+                        <li class="mb-2"><a href="https://www.ciaosaigonhotelspa.com/vi/">
+                                Khách sạn Hồ Chí Minh</a></li>
+                        <li class="mb-2"><a
+                                href="https://www.google.com/travel/hotels/C%E1%BA%A7n%20Th%C6%A1%2C%20Ninh%20Ki%E1%BB%81u%2C%20C%E1%BA%A7n%20Th%C6%A1/entity/CgoI6t_r7rK4gbsrEAE?q=kh%C3%A1ch%20s%E1%BA%A1n%20c%E1%BA%A7n%20th%C6%A1&g2lb=2502548%2C2503771%2C2503781%2C4258168%2C4270442%2C4284970%2C4291517%2C4306835%2C4429192%2C4515404%2C4597339%2C4731329%2C4757164%2C4778035%2C4814050%2C4850737%2C4861688%2C4864715%2C4874190%2C4886082%2C4886480%2C4893075%2C4906023%2C4920132%2C4924070%2C4935108%2C4936396%2C4964835%2C4964966%2C4965990%2C4966233%2C4968087%2C4972345%2C4977499%2C4977787%2C4977923&hl=vi-VN&gl=vn&cs=1&ssta=1&ts=CAESCAoCCAMKAggDGiAKAhoAEhoSFAoHCOcPEAMYHBIHCOcPEAMYHRgBMgIQACoJCgU6A1ZORBoA&rp=EKjt_vnDp9GVjwEQ6t_r7rK4gbsrEN6Sgt200764PzgBQABIAqIBI0PhuqduIFRoxqEsIE5pbmggS2nhu4F1LCBD4bqnbiBUaMahwAEDmgICCAA&ap=aAE&ictx=1&sa=X&ved=0CAAQ5JsGahcKEwjg3Yu3yN_9AhUAAAAAHQAAAAAQCA&utm_campaign=sharing&utm_medium=link&utm_source=htls">
+                                Khách sạn Cần Thơ</a></li>
+                        <li class="mb-2"><a
+                                href="https://www.google.com/travel/hotels/%C4%90%C3%A0%20N%E1%BA%B5ng/entity/CgsI5YLtvoXGzcuLARAB/overview?q=kh%C3%A1ch%20s%E1%BA%A1n%20%C4%91%C3%A0%20n%E1%BA%B5ng&g2lb=2502548%2C2503771%2C2503781%2C4258168%2C4270442%2C4284970%2C4291517%2C4306835%2C4429192%2C4515404%2C4597339%2C4731329%2C4757164%2C4778035%2C4814050%2C4850737%2C4861688%2C4864715%2C4874190%2C4886082%2C4886480%2C4893075%2C4906023%2C4920132%2C4924070%2C4935108%2C4936396%2C4964835%2C4964966%2C4965990%2C4966233%2C4968087%2C4972345%2C4977499%2C4977787%2C4977923&hl=vi-VN&gl=vn&cs=1&ssta=1&ts=CAESCAoCCAMKAggDGiAKAhoAEhoSFAoHCOcPEAMYHBIHCOcPEAMYHRgBMgIQACoJCgU6A1ZORBoA&rp=EOWC7b6Fxs3LiwEQitCglvK3zrfpARCG57zw_4e3u0Q4AUAASAKiAQvEkMOgIE7hurVuZ8ABA5oCAggA&ap=aAE&ictx=1&sa=X&utm_campaign=sharing&utm_medium=link&utm_source=htls">
+                                Khách sạn Đà Nẵng</a></li>
+                        <li class="mb-2"><a
+                                href="https://www.google.com/travel/hotels/H%E1%BA%A3i%20Ph%C3%B2ng/entity/CgoIwNH8vZq43sMYEAE?q=kh%C3%A1ch%20s%E1%BA%A1n%20H%E1%BA%A3i%20Ph%C3%B2ng&g2lb=2502548%2C2503771%2C2503781%2C4258168%2C4270442%2C4284970%2C4291517%2C4306835%2C4429192%2C4515404%2C4597339%2C4731329%2C4757164%2C4778035%2C4814050%2C4850737%2C4861688%2C4864715%2C4874190%2C4886082%2C4886480%2C4893075%2C4906023%2C4920132%2C4924070%2C4935108%2C4936396%2C4964835%2C4964966%2C4965990%2C4966233%2C4968087%2C4972345%2C4977499%2C4977787%2C4977923&hl=vi-VN&gl=vn&cs=1&ssta=1&ts=CAESCAoCCAMKAggDGiAKAhoAEhoSFAoHCOcPEAMYHBIHCOcPEAMYHRgBMgIQACoJCgU6A1ZORBoA&rp=EK-Jrq-J1MLnLBCouZbJ1aWJkc0BEMDR_L2auN7DGDgBQABIAqIBDEjhuqNpIFBow7JuZ8ABA5oCAggA&ap=aAE&ictx=1&sa=X&ved=0CAAQ5JsGahcKEwjoj4-Wyd_9AhUAAAAAHQAAAAAQAw&utm_campaign=sharing&utm_medium=link&utm_source=htls">
+                                Khách sạn Hải Phòng</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-lg-3">
+                    <h5 class="btn btn-primary">Combo vé máy bay và khách sạn</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">
+                                Combo du lịch Hà Nội</a></li>
+                        <li class="mb-2"><a href="#">
+                                Combo du lịch Hồ Chí Minh</a></li>
+                        <li class="mb-2"><a href="#">
+                                Combo du lịch Cần Thơ</a></li>
+                        <li class="mb-2"><a href="#">
+                                Combo du lịch Đà Nẵng</a></li>
+                        <li class="mb-2"><a href="#">
+                                Combo du lịch Hải Phòng</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-lg-3">
+                    <h5 class="btn btn-primary">Hoạt động Tham quan và Giải trí</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a
+                                href="https://truongcaodangyhanoi.edu.vn/gioi-thieu-ve-ha-noi-vung-dat-nghin-nam-van-hien.htm">
+                                Hoạt động Tham quan & Giải trí tại Hà Nội</a></li>
+                        <li class="mb-2"><a href="https://www.klook.com/vi/blog/sai-gon-co-gi-choi/">
+                                Hoạt động Tham quan & Giải trí tại Hồ Chí Minh</a></li>
+                        <li class="mb-2"><a
+                                href="https://vietair.com.vn/du-lich-trong-nuoc/nhung-dia-diem-vui-choi-o-can-tho.html">
+                                Hoạt động Tham quan & Giải trí tại Cần Thơ</a></li>
+                        <li class="mb-2"><a href="https://www.tourismdanang.vn/gioi-thieu-da-nang/">
+                                Hoạt động Tham quan & Giải trí tại Đà Nẵng</a></li>
+                        <li class="mb-2"><a href="https://vnexpress.net/cam-nang-du-lich-hai-phong-4462112.html">
+                                Hoạt động Tham quan & Giải trí tại Hải Phòng</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+			  </div>
+    </main>
+    <footer>
+        <div class="row">
+            <div class="col-md-4" style="text-align: center;">
+                <img src="./img/logo f.jpg" alt="Bootstrap" width="110px" height="70px"
+                    style="border: 2px solid white;"><br><br>
+                <h5 style="color:white"> Đối tác thanh toán</h5><br>
+                <img style="width: 60px; height: 60px; margin-bottom: 5px;" src="./img/Bank/vt.JPG" alt="">
+                <img style="width: 60px; height: 60px; margin-bottom: 5px;" src="./img/Bank/BIDV.JPG" alt="">
+                <img style="width: 60px; height: 60px; margin-bottom: 5px;" src="./img/Bank/k.JPG" alt="">
+                <img style="width: 60px; height: 60px; margin-bottom: 5px;" src="./img/Bank/MoMo.JPG" alt="">
+                <img style="width: 60px; height: 60px; margin-bottom: 5px;" src="./img/Bank/tcb.JPG" alt="">
+                <img style="width: 60px; height: 60px; margin-bottom: 5px;" src="./img/Bank/tp.JPG" alt="">
+                <img style="width: 60px; height: 60px; margin-bottom: 5px;" src="./img/Bank/vc.JPG" alt="">
+                <img style="width: 60px; height: 60px; margin-bottom: 5px;" src="./img/Bank/visa.JPG" alt="">
+                <img style="width: 60px; height: 60px; margin-bottom: 5px;" src="./img/Bank/mtc.JPG" alt="">
+            </div>
+            <div class="col-md-4" style="text-align: center;">
+                <br>
+                <h5>Tiện ích</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="./main.html">Đặt vé</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="./h-khachsan.html">Khách sạn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="./c-combo.html">Combo tiết kiệm</a>
+                    </li>
+                </ul>
+                <h5>Về ASK</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="./m-Member.html">Về chúng tôi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="./l-law.html">Chính sách Quyền riêng tư</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4" style="text-align: center;">
+                <br>
+                <h5>Địa chỉ liên hệ</h5>
+                <h6><i class="material-icons" style="font-size: 18px;">call</i> Tel : +84 345 678 910</h6>
+                <h6><i class="material-icons" style="font-size: 18px;">contact_mail</i> Email : Lol@gmail.com</h6>
+                <h6><i class="material-icons" style="font-size: 18px;">facebook</i> Facebook: LOL</h6>
+            </div>
+        </div>
+    </footer>
+    <div id="top-up">
+        <i class=""><img width="50px" height="50px"
+                src="https://media.istockphoto.com/id/1353943974/vector/up-arrow-icon-on-blue-background-flat-design-with-long-shadow.jpg?s=170667a&w=0&k=20&c=RDdvYKw9nOpnVFXpG6fBRKEuH4iV0P8jq9SXEUq1KpA="></img>
+        </i>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="./js/nut.js"></script>
+</body>
+
+</html>
